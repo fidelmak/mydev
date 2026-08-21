@@ -22,7 +22,7 @@ const Pills = ({ icon, text }: PillsProps) => {
 const styles = StyleSheet.create({
   pills: {
     width: '45%',
-    height: vs(45),
+    height: vs(35),
 
     borderWidth: 1,
     borderColor: 'white',
@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
 
     gap: s(8),
     marginTop: vs(20),
+    
   },
 
   text: {

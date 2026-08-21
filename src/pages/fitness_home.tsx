@@ -69,6 +69,7 @@ const FitnessHome = () => {
             text="8 hours"
           />
         </View>
+        <View style={{height:60}} />
 
         {/* Hashtags */}
         <View style={styles.hashTagsRow}>
@@ -172,8 +173,8 @@ const styles = StyleSheet.create({
 
   startText: {
     color: 'black',
-    fontSize: moderateScale(20),
-    fontWeight: '700',
+    fontSize: moderateScale(30),
+    fontWeight: '600',
   },
 });
 

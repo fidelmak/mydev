@@ -26,7 +26,7 @@ const styles =  StyleSheet.create({
     text:{
         color: 'white',
         fontSize: s(50),
-       fontWeight: '200',
+       fontWeight: '600',
         marginLeft: 10,
        textAlign: 'left',
        width: '80%',
