@@ -9,13 +9,14 @@ import Flex from './flex_direction';
 import Position from './position';
 import Responsive from './responsive_ui';
 import FitnessHome from './src/pages/fitness_home';
+import PaymentScreen from './src/pages/payment';
 
 export default function App() {
   const onButtonPress = () => Alert.alert("Button Pressed");
 
   return (
     <SafeAreaProvider>
-    <FitnessHome />
+    <PaymentScreen />
     </SafeAreaProvider> 
   );
 }

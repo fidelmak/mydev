@@ -15,11 +15,11 @@ import {
 
 import GymImage from '../../assets/Gym.jpg';
 
-import AppBar from '../components/appbar';
+import AppBar from '../components/Appbar';
 import ContentOne from '../components/ContentOne';
-import Pills from '../components/pills';
-import HashTags from '../components/hashtag';
-import Activity from '../components/activity';
+import Pills from '../components/Pills';
+import HashTags from '../components/Hashtag';
+import Activity from '../components/Activity';
 
 import EvilIcons from '@expo/vector-icons/EvilIcons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
