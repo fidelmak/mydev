@@ -12,6 +12,11 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import PaymentList from '../components/PaymentList';
+import BankCardBox from '../components/BankCardBox';
+import SampleCard from '../components/SampleCard';
+import AddButton from '../components/AddButton';
+import Total from '../components/Total';
+import PaymentButton from '../components/PaymentButton';
 
 const PaymentScreen = () => {
   const   [click ,setClick] = useState(true);
@@ -23,15 +28,20 @@ const PaymentScreen = () => {
              <View style={styles.activitySpacingW}/>
             <Text style= {styles.navText}>Payment</Text> 
         </View>
-        <View style={{ }}>
+     
            
-        {/* <PaymentCard title='Cash' isSelected={click} icon={<MaterialCommunityIcons name="cash-multiple" size={24} color="#FF7622" />} />
-         <PaymentCard title='MasterCard' isSelected={click} icon={<Fontisto name="mastercard" size={24} color="#FF7622" />} />
-         <PaymentCard title='PayPal' isSelected={click} icon={<FontAwesome name="paypal" size={24} color="#FF7622"  />} />
-         <PaymentCard title='Visa' isSelected={click} icon={<FontAwesome name="cc-visa" size={24} color="#FF7622" />} /> */}
+     
          
          <PaymentList />
-   </View>
+            
+         <View style={{paddingHorizontal: s(20),}}>
+             <BankCardBox />
+         </View>
+         <AddButton />
+         <Total />
+         <PaymentButton />
+
+
     </View>
   )
 }
