@@ -32,7 +32,7 @@ const response = await axios.get(endpointUrl);
     }
   };
   // this is a delete request by id
-  export const deleteBookById = async ({onSuccess, onFailed},id) => {
+  export const deleteBookById = async ({onSuccess, onFailed,id}) => {
     try {
       const response = await axios.delete(`${endpointUrl}/${id}`);
       Alert.alert("Book deleted successfully");
@@ -48,7 +48,7 @@ const response = await axios.get(endpointUrl);
       "https://i.pinimg.com/1200x/16/fa/c4/16fac462481d0e255ac8b6f9be5c3d88.jpg",
     price_of_books: "200.80",
   };
-  export const createBook = async ({onSuccess, onFailed}) => {
+  export const createBook = async ({onSuccess, onFailed, body}) => {
     try {
       const response = await axios.post(endpointUrl, body);
 
@@ -58,7 +58,7 @@ const response = await axios.get(endpointUrl);
         onFailed && onFailed(error)
     }
   };
-export const updateBook = async ({onSuccess, onFailed},id) => {
+export const updateBook = async ({onSuccess, onFailed,id,body}) => {
   try{
 const response = await axios.put(`${endpointUrl}/${id}`,body);
  Alert.alert("Book has been updated");
